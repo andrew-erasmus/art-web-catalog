@@ -1,27 +1,81 @@
-*{
+/* *{
     border: solid red 1px;
-    margin: 0;
+
+} */
+html{
+    background-color: #e6e1d5;
+}
+.logo{
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 201px;
+    max-height: 201px;
+    align-self: center;
+    border: solid black 1px;
+    border-radius: 100%;
+    margin: 10px;
+} 
+
+.heading{
+    color: #8f4031;
 }
 
 body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0px;
+    
 }
 
 .header{
-    background-color: bisque;
+    background-color: #8f4031;
     flex:1;
-    max-height: 5%;
+    max-height: 89px;
+    min-height: 90px;
+    margin: 0;
 }
 
 .main-body{
-    background-color: rgb(175,255,255);
+    background-color: #e6e1d5;
     flex:1;
+    max-width: 81%;
+    min-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
 }
 
 .footer{
-    background-color: rgb(175,175,255);
+    background-color: #8f4031;
     flex:1;
-    max-height: 7%;
+    max-height: 89px;
+    min-height: 90px;
 }
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0);
+    opacity: 0%;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    
+    background: #8f4031;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* TODO: Look into why items in the body extend over */
