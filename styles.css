@@ -1,23 +1,27 @@
 *{
     border: solid red 1px;
-}
-
-html, body{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    
-    text-align: center;
+    margin: 0;
 }
 
 body{
-    margin-left: auto;
-    margin-right: auto;
-    flex: 1;
-    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-div{
-    flex: auto  ;
+.header{
+    background-color: bisque;
+    flex:1;
+    max-height: 5%;
+}
+
+.main-body{
+    background-color: rgb(175,255,255);
+    flex:1;
+}
+
+.footer{
+    background-color: rgb(175,175,255);
+    flex:1;
+    max-height: 7%;
 }
