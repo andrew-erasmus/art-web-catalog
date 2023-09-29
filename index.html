@@ -7,8 +7,9 @@
     <title>Isabella Erasmus Web Catalogue</title>
 
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.cdnfonts.com/css/vogue" rel="stylesheet">
-    <script src="script.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/classy-vogue" rel="stylesheet">
+    <script src="script.js" defer></script>
+
 
 </head>
 
@@ -18,7 +19,7 @@
 
     <div class="header" id="myHeader">
         <!-- Header -->
-        
+
         <div class="dropdown">
 
             <button class="dropbtn" onclick="dropDown()">Menu
@@ -38,15 +39,32 @@
 
     <div class="main-body">
 
-        <h1 class="heading" id="main-name">Isabella Erasmus</h1>
+        <h1 class="heading" id="main-name">ISABELLA ERASMUS</h1>
 
-        <h2 class="heading">4th year graduate exhibition</h2>
+        <h2 class="heading">4TH YEAR GRADUATE EXHIBITION</h2>
 
-        <div class="carousel"> <!-- Carousel --></div>
+        <section aria-label="Catalogue Images">
+            <div class="carousel" data-carousel>
+                <!-- Carousel -->
+                <button class="carousel-button prev" data-carousel-button="prev">&#11164;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#11166;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/one.png" alt="one">
+                    </li>
+                    <li class="slide">
+                        <img src="images/two.png" alt="two">
+                    </li>
+                    <li class="slide">
+                        <img src="images/three.png" alt="three">
+                    </li>
+                </ul>
+            </div>
+        </section>
 
 
         <div class="essay" id="essay-heading">
-            <h2>Catalogue Essay</h2>
+            <h2>CATALOGUE ESSAY</h2>
             <!-- Essay Content -->
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac viverra urna. In ante sapien,
                 consequat vel auctor lacinia, venenatis eget urna. Suspendisse elementum finibus feugiat. Nulla nec
@@ -171,7 +189,7 @@
 
 
         <div class="contact-container" id="contact-details">
-            <h2>Contact:</h2>
+            <h2>CONTACT:</h2>
             <h3>Email</h3>
             <p>isabella.j.erasmus@gmail.com</p> <!---->
             <h3>Instagram</h3>
