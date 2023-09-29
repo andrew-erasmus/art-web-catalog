@@ -41,7 +41,8 @@ body {
 
 
 #myHeader {
-    position: sticky; top: 0;
+    position: sticky;
+    top: 0;
 }
 
 .main-body {
@@ -76,20 +77,21 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0);
+    background: #8f4031;
     opacity: 0%;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-
-    background: #8f4031;
+    background: #e6e1d5;
+    border: solid #8f4031 0.5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
 
 
 /* Dropdown menu */
@@ -155,4 +157,8 @@ body {
 
 .show {
     display: block;
+}
+
+#myHeader{
+    padding-right: 50px;
 }
