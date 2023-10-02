@@ -8,6 +8,7 @@ var myDropdown = document.getElementById("myDropdown");
 window.onclick = function (e) {
     if(myDropdown.classList.contains('window')){
         myDropdown.classList.remove('window');
+        checkbox.checked=false;
     }else if (!e.target.matches('.dropbtn') || !e.target.matches('#checkbox')) {
         if (myDropdown.classList.contains('show')) {
             myDropdown.classList.remove('show');
