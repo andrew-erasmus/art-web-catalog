@@ -157,8 +157,74 @@ body {
     display: block;
 }
 
+/* Dropdown bars */
+#checkbox {
+    display: none;
+}
+
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+}
+
+.bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+#bar2 {
+    transition-duration: .8s;
+}
+
+#bar1 {
+    width: 50%;
+}
+
+#bar2 {
+    width: 75%;
+}
+
+#checkbox:checked+.toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .1s;
+}
+
+#checkbox:checked+.toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
+
 /* carousel slider */
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -168,28 +234,29 @@ body {
     position: relative;
 }
 
-.slide{
+.slide {
     position: absolute;
     inset: 0;
     opacity: 0;
     transition: 200ms opacity ease-in-out;
-    
+
 }
 
-.slide > img{
+.slide>img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit:scale-down;
+    object-fit: scale-down;
     object-position: center;
 }
-.slide[data-active]{
+
+.slide[data-active] {
     opacity: 1;
     z-index: 1;
     transition-delay: 0ms;
 }
 
-.carousel-button{
+.carousel-button {
     position: absolute;
     z-index: 2;
     background: none;
@@ -204,25 +271,25 @@ body {
     /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
-.carousel-button:hover{
+.carousel-button:hover {
     color: white;
     /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
-.carousel-button:focus{
+.carousel-button:focus {
     outline: 1px solid black;
 }
 
-.carousel > ul{
+.carousel>ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.carousel-button.prev{
+.carousel-button.prev {
     left: 1rem;
 }
-.carousel-button.next{
+
+.carousel-button.next {
     right: 1rem;
 }
-
