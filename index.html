@@ -49,30 +49,27 @@
 
         <h2 class="heading">4TH YEAR GRADUATE EXHIBITION</h2>
 
+        <div class="image-carousel">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="images/Picture1.png" alt="one"></li>
+                        <li class="splide__slide"><img src="images/Picture2.png" alt="two"></li>
+                        <li class="splide__slide"><img src="images/Picture3.png" alt="three"></li>
+                        <li class="splide__slide"><img src="images/Picture4.png" alt="four"></li>
+                        <li class="splide__slide"><img src="images/Picture5.png" alt="five"></li>
 
-
-        <section class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide"><img src="images/Picture1.png" alt="one"></li>
-                    <li class="splide__slide"><img src="images/Picture2.png" alt="two"></li>
-                    <li class="splide__slide"><img src="images/Picture3.png" alt="three"></li>
-                    <li class="splide__slide"><img src="images/Picture4.png" alt="four"></li>
-                    <li class="splide__slide"><img src="images/Picture5.png" alt="five"></li>
-
-                </ul>
-            </div>
-        </section>
+                    </ul>
+                </div>
+            </section>
+        </div>
         <script>
             var splide = new Splide('.splide', {
                 type: 'loop',
-                height: 'fit-content',
+                height: '20rem',
                 focus: 'center',
                 autoWidth: true,
-                gap: '10px',
-                drag: true,
-                snap: true,
-                speed: number=1000
+                gap: '10px'
             });
 
             splide.mount();
@@ -296,7 +293,9 @@
 
 
         <div class="contact-container" id="contact-details">
-
+            <div class="social-button instagram"><a href="https://instagram.com/isabella.era?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="./images/instagram-icon.png"></a></div>
+            <div class="social-button telephone"><a href="tel:+2772-583-6371"><img src="./images/phone-icon.png"></a></div>
+            <div class="social-button mail"><a href="mailto:isabella.j.erasmus@gmail.com"><img src="./images/mail-icon.png"></a></div>
         </div>
     </div>
 
