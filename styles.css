@@ -9,6 +9,13 @@ html {
     scroll-behavior: smooth;
     font-family: 'Classy Vogue', sans-serif;
 }
+#home-link{
+    height: 80px;
+}
+
+#essay-heading-link{
+    height: 80px;
+}
 
 .logo {
     min-width: 200px;
