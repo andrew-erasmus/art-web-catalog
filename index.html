@@ -10,6 +10,9 @@
     <link href="https://fonts.cdnfonts.com/css/classy-vogue" rel="stylesheet">
     <script src="script.js" defer></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
 </head>
 
@@ -46,30 +49,35 @@
 
         <h2 class="heading">4TH YEAR GRADUATE EXHIBITION</h2>
 
-        <section aria-label="Catalogue Images">
-            <div class="carousel" data-carousel>
-                <!-- Carousel -->
-                <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
-                <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-                <ul data-slides>
-                    <li class="slide" data-active>
-                        <img src="images/Picture1.png" alt="one">
-                    </li>
-                    <li class="slide">
-                        <img src="images/Picture2.png" alt="two">
-                    </li>
-                    <li class="slide">
-                        <img src="images/Picture3.png" alt="three">
-                    </li>
-                    <li class="slide">
-                        <img src="images/Picture4.png" alt="three">
-                    </li>
-                    <li class="slide">
-                        <img src="images/Picture5.png" alt="three">
-                    </li>
+
+
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="images/Picture1.png" alt="one"></li>
+                    <li class="splide__slide"><img src="images/Picture2.png" alt="two"></li>
+                    <li class="splide__slide"><img src="images/Picture3.png" alt="three"></li>
+                    <li class="splide__slide"><img src="images/Picture4.png" alt="four"></li>
+                    <li class="splide__slide"><img src="images/Picture5.png" alt="five"></li>
+
                 </ul>
             </div>
         </section>
+        <script>
+            var splide = new Splide('.splide', {
+                type: 'loop',
+                height: 'fit-content',
+                focus: 'center',
+                autoWidth: true,
+                gap: '10px',
+                drag: true,
+                snap: true,
+                speed: number=1000
+            });
+
+            splide.mount();
+        </script>
+
 
 
         <div class="essay" id="essay-heading">
@@ -280,22 +288,15 @@
 
         </div>
 
-        <a download="web-catalog.txt" target="_blank" href="./files/info.txt"
-                class="download-btn">
-        <div class="catalogue-download">
-            Download Catalogue
-        </div>
-    </a>
+        <a download="web-catalog.txt" target="_blank" href="./files/info.txt" class="download-btn">
+            <div class="catalogue-download">
+                Download Catalogue
+            </div>
+        </a>
 
-        
+
         <div class="contact-container" id="contact-details">
-            <h2>CONTACT:</h2>
-            <h3>Email</h3>
-            <p>isabella.j.erasmus@gmail.com</p> <!---->
-            <h3>Instagram</h3>
-            <p>@isabella.era.art</p> <!--Can have link here-->
-            <h3>Phone</h3>
-            <p>+27 72 583 6371</p>
+
         </div>
     </div>
 
