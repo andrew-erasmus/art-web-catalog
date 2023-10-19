@@ -293,3 +293,32 @@ body {
 .carousel-button.next {
     right: 1rem;
 }
+
+/* Download button styling */
+.catalogue-download{
+    padding:0;
+    max-width: fit-content;
+    padding: 10px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8f4031;
+    border-radius: 10px;
+    
+}
+
+.download-btn{
+    text-decoration: none;
+    color:#e6e1d5;
+    
+}
+
+.catalogue-download:hover{
+    transform: scale(1.2);
+    transition:ease-in-out 0.5s;
+}
+
+.catalogue-download:not(:hover){
+    transform: scale(1);
+    transition:ease-in-out 0.5s;
+}
