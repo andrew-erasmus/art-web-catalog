@@ -8,9 +8,11 @@ html {
     background-color: #e6e1d5;
     scroll-behavior: smooth;
     font-family: 'Classy Vogue', sans-serif;
+    font-size: large;
 }
+
 #home-link{
-    height: 80px;
+    height: 65px;
 }
 
 #essay-heading-link{
