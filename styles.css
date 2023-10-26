@@ -9,6 +9,8 @@ html {
     scroll-behavior: smooth;
     font-family: 'Classy Vogue', sans-serif;
     font-size: large;
+    font-weight:bold;
+    line-height: 1.5;
 }
 
 p {
@@ -226,6 +228,8 @@ body {
 
 /* Download button styling */
 .catalogue-download {
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 0;
     max-width: fit-content;
     padding: 10px;
@@ -257,7 +261,7 @@ body {
 .contact-container {
     background-color: white;
     border-radius: 100px;
-    margin: 10px;
+    margin: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -307,7 +311,7 @@ a>img {
 }
 
 #reference-dropdown {
-    margin: 10px;
+    margin: 50px;
     border: solid #8f4031 3px;
     border-radius: 50px;
     display: flex;
@@ -323,13 +327,13 @@ a>img {
 
     padding-left: 20px;
     padding-right: 20px;
-    /* overflow: hidden; */
+
+    max-width: fit-content	;
 }
 
 #reference-btn{
     position: relative;
     overflow: hidden;
-    /* padding-bottom: 56.25%; */
 }
 
 iframe{
