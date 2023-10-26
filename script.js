@@ -39,43 +39,19 @@ checkbox.addEventListener('change', function () {
 
 });
 
-// Reference dropdown functionality
-var ref = document.getElementById("reference-btn");
-var refDiv = document.getElementById("reference-dropdown");
-ref.addEventListener("click", () => {
-
-    if(document.getElementById('references') === null){
-        const p = document.createElement("p");
-    p.setAttribute('id', 'references');
-    const text = document.createTextNode(`Arya, R. (2014) Abjection and representation: An exploration of abjection in the visual arts, film and literature. Springer.
-
-Fischer, K. (2023) Is Bacteria the Bad Guy Behind Endometriosis? HealthCentral. HealthCentral. Available at: https://www.healthcentral.com/womens-health/is-bacteria-the-bad-guy-behind-endometriosis (Accessed: 30 August 2023).
-
-Leigh, K. (2023) A Potential Breakthrough in Endometriosis Research: Prognosis, Bloomberg. Bloomberg. Available at: https://www.bloomberg.com/news/newsletters/2023-07-03/a-potential-breakthrough-in-endometriosis-research-prognosis?in_source=embedded-checkout-banner#xj4y7vzkg (Accessed: 30 August 2023).
-
-Leyland, N. et al. (2010) ‘Endometriosis: Diagnosis and Management’, Journal of Endometriosis, 2(3), pp. 107–134. doi:10.1177/228402651000200303.
-
-Lorde, A. (2017) A burst of light: And other essays. Courier Dover Publications.
-
-Malhi, S. (2023) A new clue to endometriosis, an agonizing and poorly understood disease, The Washington Post. The Washington Post. Available at: https://www.washingtonpost.com/health/2023/06/14/endometriosis-fusobacterium-possible-links/ (Accessed: 30 August 2023).
-
-Mirk, S. (2016) ‘Audre Lorde Thought of Self-Care as an “Act of Political Warfare”’, Bitch Media, 18 February. Available at: https://www.bitchmedia.org/article/audre-lorde-thought-self-care-act-political-warfare (Accessed: 29 August 2023).
-
-Research Guides: Learn &amp; Unlearn: Anti-racism Resource Guide: Radical Self Care (no date) Research Guides: Learn &amp; Unlearn: Anti-racism Resource Guide: Radical Self Care, Library Guides SAIC. Available at: https://libraryguides.saic.edu/learn_unlearn/wellness5 (Accessed: 29 August 2023).
-
-Stewart, S. (1993) On longing: Narratives of the miniature, the gigantic, the souvenir, the collection. Duke University Press.
-
-WHO, W.H.O. (2023) Endometriosis, World Health Organization: WHO. World Health Organization: WHO. Available at: https://www.who.int/news-room/fact-sheets/detail/endometriosis (Accessed: 28 September 2023). 
-`);
-    p.appendChild(text);
-    refDiv.appendChild(p);
-
-    }else{
-        const p = document.getElementById('references');
-        p.remove();
-    }
+// Reference functionality
+function hideReferences() {
+    var x = document.getElementById("reference-btn");
+    var down = document.getElementById("down-btn");
+    var up = document.getElementById("up-btn");
     
-
-});
-
-
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      down.style.display = "none";
+      up.style.display="block"
+    } else {
+      x.style.display = "none";
+      up.style.display = "none";
+      down.style.display="block"
+    }
+  }
