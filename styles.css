@@ -10,15 +10,16 @@ html {
     font-family: 'Classy Vogue', sans-serif;
     font-size: large;
 }
-p{
+
+p {
     text-align: justify;
 }
 
-#home-link{
+#home-link {
     height: 65px;
 }
 
-#essay-heading-link{
+#essay-heading-link {
     height: 80px;
 }
 
@@ -224,8 +225,8 @@ body {
 }
 
 /* Download button styling */
-.catalogue-download{
-    padding:0;
+.catalogue-download {
+    padding: 0;
     max-width: fit-content;
     padding: 10px;
     align-self: center;
@@ -233,27 +234,27 @@ body {
     margin-right: auto;
     background-color: #8f4031;
     border-radius: 10px;
-    
+
 }
 
-.download-btn{
+.download-btn {
     text-decoration: none;
-    color:#e6e1d5;
-    
+    color: #e6e1d5;
+
 }
 
-.catalogue-download:hover{
+.catalogue-download:hover {
     transform: scale(1.2);
-    transition:ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
-.catalogue-download:not(:hover){
+.catalogue-download:not(:hover) {
     transform: scale(1);
-    transition:ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
 /* Contact Card */
-.contact-container{
+.contact-container {
     background-color: white;
     border-radius: 100px;
     margin: 10px;
@@ -265,61 +266,76 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.social-button{
+
+.social-button {
     display: flex;
-    margin:20px;
+    margin: 20px;
     border-radius: 100%;
-    padding:10px;
+    padding: 10px;
     align-content: center;
     justify-content: center;
 }
 
-a > img{
+a>img {
     align-self: center;
 }
-.social-button.instagram{
-    margin:20px;
+
+.social-button.instagram {
+    margin: 20px;
     background-color: #d62976;
 }
 
-.social-button.telephone{
-    margin:20px;
-    background-color: #0f402e ;
+.social-button.telephone {
+    margin: 20px;
+    background-color: #0f402e;
 }
 
-.social-button.mail{
-    margin:20px;
+.social-button.mail {
+    margin: 20px;
     background-color: #3e65cf;
 }
 
-.social-button:hover{
+.social-button:hover {
     transform: scale(1.1);
     transition: 0.2s;
     box-shadow: 2px 2px 2px 2px;
 }
 
-.social-button:not(:hover){
+.social-button:not(:hover) {
     transform: scale(1.0);
     transition: 0.2s;
 }
 
-#reference-dropdown{
-    margin:10px;
+#reference-dropdown {
+    margin: 10px;
     border: solid #8f4031 3px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    max-width: fit-content;
     padding: 15px;
     align-items: center;
     justify-content: center;
+    
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    /* overflow: hidden; */
 }
 
 #reference-btn{
-    display: none;
-    
+    position: relative;
+    overflow: hidden;
+    /* padding-bottom: 56.25%; */
+}
+
+iframe{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+   
 }
