@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
     font-family: 'Classy Vogue', sans-serif;
     font-size: large;
-    font-weight:bold;
+    font-weight: bold;
     line-height: 1.5;
 }
 
@@ -330,15 +330,75 @@ a>img {
 
 }
 
-#reference-btn{
+#reference-btn {
     position: relative;
     overflow: hidden;
 }
 
-iframe{
+iframe {
     position: relative;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
-   
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    border: none;
+}
+
+
+
+/* Add media query for phones */
+.essay-download {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    iframe {
+        display: none;
+    }
+
+    #reference-btn {
+        display: none
+    }
+
+    #reference-dropdown {
+        display: none;
+    }
+
+
+    .essay-download {
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 0;
+        max-width: fit-content;
+        padding: 10px;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #8f4031;
+        border-radius: 10px;
+
+    }
+
+    .download-btn {
+        text-decoration: none;
+        color: #e6e1d5;
+
+    }
+
+    .catalogue-download:hover {
+        transform: scale(1.2);
+        transition: ease-in-out 0.5s;
+    }
+
+    .catalogue-download:not(:hover) {
+        transform: scale(1);
+        transition: ease-in-out 0.5s;
+    }
+
+
+
 }
