@@ -286,9 +286,12 @@ img{
     justify-content: center;
 }
 
-a>img {
+/* a>img {
+    margin-top: 3px; 
+    height: 50px;
     align-self: center;
-}
+    justify-content: center;
+} */
 
 .social-button.instagram {
     margin: 20px;
@@ -351,7 +354,10 @@ iframe {
     border: none;
 }
 
-
+.portrait-image{
+    height: 500px;
+    margin-bottom: 30px;
+} 
 
 /* Add media query for phones */
 .essay-download {
