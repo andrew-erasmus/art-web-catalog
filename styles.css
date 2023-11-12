@@ -359,14 +359,14 @@ iframe {
     margin-bottom: 30px;
 } 
 
-/* Add media query for phones */
+
 .essay-download {
     display: none;
 }
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     iframe {
         display: none;
     }
