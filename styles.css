@@ -304,7 +304,12 @@ img{
 
 .social-button.mail {
     margin: 20px;
-    background-color: #3e65cf;
+    background-color: #A30000;
+}
+
+.social-button.linkedin {
+    margin: 20px;
+    background-color: #0077b5;
 }
 
 .social-button:hover {
