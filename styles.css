@@ -278,7 +278,7 @@ img{
 
 .social-button {
     display: flex;
-    margin: 20px;
+    margin: 10px;
     border-radius: 100%;
     padding: 10px;
     align-content: center;
@@ -293,22 +293,18 @@ img{
 } */
 
 .social-button.instagram {
-    margin: 20px;
     background-color: #d62976;
 }
 
 .social-button.telephone {
-    margin: 20px;
     background-color: #0f402e;
 }
 
 .social-button.mail {
-    margin: 20px;
     background-color: #A30000;
 }
 
 .social-button.linkedin {
-    margin: 20px;
     background-color: #0077b5;
 }
 
